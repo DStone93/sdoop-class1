@@ -3,11 +3,14 @@ class LunchCoolerBox:
     items = ["sammich", "granola bar", "water bottle"]
     #
 
-    def __init__ (isOpen, contents, isFull, newItem):
+    def __init__ (isOpen, contents, isFull, newItem, items):
         self.isOpen = False
         self.contents = False
         self.isFull = False
         self.newItem: str
+        # how do I hide items until called?
+        self.items = ["sammich", "granola bar", "water bottle"]
+        #
 
     def isOpen(self):
         self.isOpen = True
