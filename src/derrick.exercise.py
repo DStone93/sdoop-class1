@@ -3,10 +3,11 @@ class LunchCoolerBox:
     items = ["sammich", "granola bar", "water bottle"]
     #
 
-    isOpen:bool = False
-    contents:bool = False
-    isFull:bool = False
-    newItem:str
+    def __init__ (isOpen, contents, isFull, newItem):
+        self.isOpen = False
+        self.contents = False
+        self.isFull = False
+        self.newItem: str
 
     def isOpen(self):
         self.isOpen = True
